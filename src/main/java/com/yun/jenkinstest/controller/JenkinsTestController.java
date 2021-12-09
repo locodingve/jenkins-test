@@ -20,4 +20,9 @@ public class JenkinsTestController {
     public ResponseEntity<JenkinsTestDtoResponse> test(){
         return ResponseEntity.ok(new JenkinsTestDtoResponse(LocalDateTime.now(), "success"));
     }
+
+    @GetMapping("test")
+    public ResponseEntity<JenkinsTestDtoResponse> updateCodeOnGithub(){
+        return ResponseEntity.ok(new JenkinsTestDtoResponse(LocalDateTime.now(), "success"));
+    }
 }
