@@ -25,4 +25,5 @@ public class JenkinsTestController {
     public ResponseEntity<JenkinsTestDtoResponse> updateCodeOnGithub(){
         return ResponseEntity.ok(new JenkinsTestDtoResponse(LocalDateTime.now(), "success"));
     }
+
 }
